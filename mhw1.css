@@ -1,0 +1,300 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    width:100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(36, 145, 61);
+}
+
+.navig{
+    background-color: rgb(97, 214, 128);
+    font-family:  Helvetica, sans-serif;
+    border-radius: 15%;
+    padding:2px 3px;
+    border-bottom: 3px solid black;
+}
+
+.navig:hover{
+    background-color: rgba(255, 252, 239, 0.7);
+}
+
+header{
+    margin-top: 45px;
+    height: 500px;
+    z-index: 1;
+}
+
+#sfondo{
+    position:absolute;
+    top: 45px;
+    left: 0px;
+    z-index:1;
+    height: 500px;
+    width: 100%;
+}
+
+.Overlay{
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0,0.3);
+    height: 500px;
+    width: 100%;
+}
+
+h1{
+    z-index: 3;
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 3.5em;
+    color: aliceblue;
+    text-align: center;
+    line-height: 500px;
+}
+
+
+.cont-prof{
+    display: flex;
+    flex-direction: column;
+    font-family:  'Fugaz One', sans-serif;
+    font-size: 1.5em;
+    align-items: center;    
+}
+
+#profilo{
+    display: block;
+    z-index: 4;
+    background-image: url(profilo.png);
+    background-size: cover;
+    border-radius: 100%;
+    
+    height: 100px;
+    width: 100px;
+    margin-top: -50px;
+}
+
+#linea{
+    background-color: black;
+    height: 2px;
+    width: 350px;
+}
+
+section{
+    display:flex;
+    font-family: 'Baskervville', serif;
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.titolo{
+    font-size: 3.3em;
+    padding: 0px;
+    font-family: 'Fugaz One', sans-serif;
+}
+
+.sottotitolo{
+    font-size: 2.5em;  
+    font-family: 'Khula', sans-serif;  
+    margin-bottom: 20px;
+}
+
+.Paragrafo{
+    font-size: 1.5em;
+    margin: 20px 0px;
+}
+
+.note{
+    display: block;
+    
+    font-size: 1.5em;  
+    margin-bottom: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+.cont-sinistro{
+    text-align: right;
+    flex-grow: 1;
+    width: 0%;
+}
+
+.cont-grande{
+    width: 66.67%;    
+}
+
+.cont-destro{
+    flex-grow: 1;
+    width: 0%;
+}
+
+.numeri{
+    display: block;
+    font-family: Arial, sans-serif ;
+    font-size: 3.5em;
+    margin-top: 4px;
+    margin-right: 40px;
+}
+
+footer{
+    background-color: rgb(36, 145, 61);
+    border: 2px solid black;
+    margin-top: 120px;
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 30px;
+    height: 60px;
+}
+
+
+@media (max-width: 1005px) {
+    h1{
+        font-size: 3em;
+    }
+    .cont-prof{
+        font-size: 1.2em;
+    }
+    #linea{
+        width: 275px;
+    }
+    .titolo{
+        font-size: 2.5em;
+    }
+    .sottotitolo{
+        font-size: 1.5em;
+    }
+    .Paragrafo{
+        font-size: 1.2em;
+    }
+    .note{
+        font-size: 1.2em;
+    }
+    .numeri{
+        font-size: 3em;
+    }
+    footer{
+        font-size: 1em ;
+    }
+}
+
+@media (max-width: 760px) {
+    h1{
+        font-size: 2em;
+    }
+    .cont-prof{
+        font-size: 1em;
+    }
+    #linea{
+        width: 225px;
+    }
+    .titolo{
+        font-size: 2em;
+    }
+    .sottotitolo{
+        font-size: 1.2em;
+    }
+    .Paragrafo{
+        font-size: 1em;
+    }
+    .note{
+        font-size: 1em;
+    }
+    .numeri{
+        font-size: 2em;
+    }
+    footer{
+        font-size: 0.8em ;
+    }
+}
+
+@media (max-width: 620px) {
+    h1{
+        font-size: 1.7em;
+    }
+    .cont-prof{
+        font-size: 0.9em;
+    }
+    #linea{
+        width: 205px;
+    }
+    .titolo{
+        font-size: 1.7em;
+    }
+    .sottotitolo{
+        font-size: 1.2em;
+    }
+    .Paragrafo{
+        font-size: 0.9em;
+    }
+    .note{
+        font-size: 0.9em;
+    }
+    .numeri{
+        font-size: 1.7em;
+    }
+
+}
+@media (max-width: 520px) {
+    h1{
+        font-size: 1.3em;
+    }
+    .cont-prof{
+        font-size: 0.8em;
+    }
+    #linea{
+        width: 185px;
+    }
+    .titolo{
+        font-size: 1.3em;
+    }
+    .sottotitolo{
+        font-size: 1em;
+    }
+    .Paragrafo{
+        font-size: 0.8em;
+    }
+    .note{
+        font-size: 0.8em;
+    }
+    .numeri{
+        font-size: 1.3em;
+    } 
+    footer{
+        font-size: 0.65em ;
+    }
+}
+@media (max-width: 400px) {
+    h1{
+        font-size: 1.1em;
+    }
+    .cont-prof{
+        font-size: 0.8em;
+    }
+    #linea{
+        width: 155px;
+    }
+    .titolo{
+        font-size: 1.1em;
+    }
+    .sottotitolo{
+        font-size: 0.9em;
+    }
+    .Paragrafo{
+        font-size: 0.75em;
+    }
+    .note{
+        font-size: 0.75em;
+    }
+    .numeri{
+        font-size: 1.1em;
+    }
+}
